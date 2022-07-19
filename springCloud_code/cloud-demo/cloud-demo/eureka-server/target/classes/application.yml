@@ -1,0 +1,10 @@
+server:
+  port: 10086 #服务端口
+spring:
+  application:
+    name: eurekaserver #服务名称
+eureka:
+  client:
+    server-url:
+      defaultZone: http://127.0.0.1:${server.port}/eureka  #地址信息
+#      register-with-eureka: true  #是否注册Eureka自己
